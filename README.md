@@ -15,7 +15,7 @@
 
   ![Descripción de la imagen](/media/modelo.png)
 
-  Luego de tener el modelo, cree un entorno virtual con VIRTUALENV para asi manejar las dependecias del proyecto de manera aislada.
+  Luego de tener el modelo, cree un entorno virtual con VIRTUALENV para asi manejar las dependencias del proyecto de manera aislada.
 
   Con el entorno virtual activo, procedo a instalar Django y a iniciar el proyecto.
 
@@ -31,7 +31,7 @@
 
   uploadFile(): este metodo se encarga de toda la logica de la vista upload/, donde se realiza la carga, apertura, procesamiento de datos, validacion y persistencia de los datos.
 
-  fileResult(): Este metodo se encarga de la logica de la vista fileresult/<nombre_archivo> , consulta base de datos y transfiere esta informacion al html para luego se procesado.
+  fileResult(): Este metodo se encarga de la logica de la vista fileresult/<nombre_archivo> , consulta base de datos y transfiere esta informacion al html para luego se ha procesado.
 
   Para terminar verifico los requerimientos y hago pruebas para ver que si se cumplen, al ver que la funcionalidad es correcta, proceso a dar estilos css a la aplicacion. 
 
@@ -72,7 +72,7 @@
         2.  <pre><code>INSERT INTO uploadForm_estado (name) VALUES ('inactivo');</code></pre>
         3.  <pre><code>INSERT INTO uploadForm_estado (name) VALUES ('espera');</code></pre>
     11.por ultimo se puede ejecutar el proyecto con el siguiente comando desde la carpeta raiz del proyecto:<pre><code>python manage.py runserver</code></pre>
-    12.Para ver la aplicacion dirigete a la ruta upload:<pre><code>http://127.0.0.1:8000/upload/</code></pre><pre><code>localhost:8000/upload/</code></pre> 
+    12.Para ver la aplicacion, dirigete a la ruta upload:<pre><code>http://127.0.0.1:8000/upload/</code></pre><pre><code>http://localhost:8000/upload/</code></pre> 
 
 
   * * *
