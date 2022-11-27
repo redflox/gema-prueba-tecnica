@@ -45,7 +45,7 @@
     1. instalar python [desde aqui](https://www.python.org/) y añadirlo al path para poder usar el comando python desde consola.
     2. instalar virtualenv <pre><code>pip install virtualenv</code></pre>
     3. Clonar este repositorio y entrar en la carpeta.
-    4. Crear un entorno virtual para posteriormente instalar las librerias del proyecto:<pre><code>python virtualenv venv</code></pre>
+    4. Crear un entorno virtual para posteriormente instalar las librerias del proyecto:<pre><code>virtualenv venv</code></pre>
     5. Activar el entorno virtual de nuestro proyecto:<pre><code>.\venv\Scripts\activate</code></pre>
     6. instalar todas las librerias y frameworks:
         - Django
