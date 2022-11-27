@@ -1,0 +1,32 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="container py-5">
+    <div class="card">
+        <div class="card-header">
+            GEMA SAS
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-center">FORMULARIO DE CARGA DE INFORMACION</h5>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <form class="card card-body" action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
+                    <div class="d-flex p-2">
+                        🖹<input class="form-control form-control-sm" id="formFileSm" type="file" name="uploadedFile" />
+                    </div>
+                    <p class="text-danger">{{error}}</p>
+                    <div class="d-flex flex-row-reverse">
+                        <button class="btn btn-light" type="submit">
+                            Enviar formulario
+                        </button>
+                    </div>
+                </form>
+            </form>
+        </div>
+    </div>
+</main>
+
+
+
+{% endblock %}
