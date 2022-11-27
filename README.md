@@ -72,7 +72,7 @@
         2.  <pre><code>INSERT INTO uploadForm_estado (name) VALUES ('inactivo');</code></pre>
         3.  <pre><code>INSERT INTO uploadForm_estado (name) VALUES ('espera');</code></pre>
     11.por ultimo se puede ejecutar el proyecto con el siguiente comando desde la carpeta raiz del proyecto:<pre><code>python manage.py runserver</code></pre>
-
+    12.Para ver la aplicacion dirigete a la ruta upload:<pre><code>http://127.0.0.1:8000/upload/</code></pre><pre><code>localhost:8000/upload/</code></pre> 
 
 
   * * *
