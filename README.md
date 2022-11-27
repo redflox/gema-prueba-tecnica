@@ -3,7 +3,7 @@
 - Tiempo planeado de solución
 
 
-  Para desarrollar este modulo, bajo mi experiencia en el framework django y planteo que el tiempo estimado es de 6 horas.
+  Para desarrollar este modulo, bajo mi experiencia en el framework django y python planteo que el tiempo estimado es de 6 horas.
 
   * * *
 - Explicación de su solución
