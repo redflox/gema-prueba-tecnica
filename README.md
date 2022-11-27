@@ -13,7 +13,7 @@
 
   Para atacar el problema lo primero fue leer y entender los requerimientos funcionales y no funcionales. De ahi decidi realizar el modelo de base de datos, planteado de la siguiente manera:
 
-  ![Descripción de la imagen](/media/modelo.png)
+  ![Descripción de la imagen](/media/relationalmodel.png)
 
   Luego de tener el modelo, cree un entorno virtual con VIRTUALENV para asi manejar las dependencias del proyecto de manera aislada.
 
