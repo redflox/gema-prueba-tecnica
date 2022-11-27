@@ -23,7 +23,7 @@
 
   ![Descripción de la imagen](/media/models.png)
 
-  Luego creo una carpeta templates, donde ubico las 2 vistas de frontend sin poner estilos css. Creo una carpeta layout con un archivo base.html porque por un momento pense que las vistas compartian algun tipo de contenido estatico como un navbar, aunque no fue asi.
+  Luego creo una carpeta templates, donde ubico las 2 vistas de frontend sin poner estilos css. Creo una carpeta layout con un archivo base.html.
 
   Luego configuro las rutas propias para la aplicacion uploadForm en el archivo urls.py, utilizo params para compartir informacion entre los dos vistas.
 
