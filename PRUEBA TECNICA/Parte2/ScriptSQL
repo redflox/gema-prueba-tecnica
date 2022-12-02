@@ -1,0 +1,13 @@
+use gemasas;
+
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor1');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor2');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor3');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor4');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor5');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor6');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor7');
+INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor8');
+INSERT INTO uploadForm_estado (name) VALUES ('activo'); 
+INSERT INTO uploadForm_estado (name) VALUES ('inactivo');
+INSERT INTO uploadForm_estado (name) VALUES ('espera');

@@ -16,13 +16,13 @@ def uploadFile(request):
 
             # Open the file local for verification
             pathName = './media/' + fileName
-            with open(pathName, newline='') as f:
-                users = csv.reader(f, delimiter=',', quotechar='\n')
-                for user in users:
-                    if (int(user[3]) <=0 or int(user[3]) >=4):
-                        return render(request, "upload.html", {
-                            'error': 'File Corrupted'
-                        })
+            # with open(pathName, newline='') as f:
+            #     users = csv.reader(f, delimiter=',', quotechar='\n')
+            #     for user in users:
+            #         if (int(user[3]) <=0 or int(user[3]) >=4):
+            #             return render(request, "upload.html", {
+            #                 'error': 'File Corrupted'
+            #             })
             
             # Saving the information in the database if the file is integrity
             archivo = models.Archivo(
@@ -37,12 +37,15 @@ def uploadFile(request):
                 users = csv.reader(f, delimiter=',', quotechar='\n')
                 for user in users:
                     estado = models.Estado.objects.get(id=user[3])
+                    revisor = models.Revisor.objects.get(id=user[4])
+
                     user = models.Usuario(
                         email = user[0],
                         name = user[1],
                         surname = user[2],
                         estado = estado,
-                        archivo = file
+                        archivo = file,
+                        revisor = revisor
                     )
                     user.save()
             
