@@ -22,7 +22,7 @@
 
   Modelos de la app de Django modificados:
 
-  
+
   ![Descripción de la imagen](/media/add_user_model.png)
   
   y para finalizar se agrea un nuevo valor a la tabla en Django Ninja para que este cree el HTML dinamico deacuerdo a los datos consultados en la base de datos.
@@ -58,21 +58,7 @@
     1. Luego desde mysql vamos a ejecutar el siguiente comando para crear la base de datos gemasas: <pre><code>create database gemasas;</code></pre>
     2. Luego desde la carpeta raiz del proyecto ejecutar el comando: <pre><code>python manage.py migrate</code></pre>
     3.  Luego ejecutar desde mysql en el orden en que se presentan:
-        1.  <pre><code>use gemasas;
-
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor1');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor2');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor3');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor4');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor5');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor6');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor7');
-INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor8');
-INSERT INTO uploadForm_estado (name) VALUES ('activo'); 
-INSERT INTO uploadForm_estado (name) VALUES ('inactivo');
-INSERT INTO uploadForm_estado (name) VALUES ('espera'); </code></pre>
-        2.  <pre><code>INSERT INTO uploadForm_estado (name) VALUES ('inactivo');</code></pre>
-        3.  <pre><code>INSERT INTO uploadForm_estado (name) VALUES ('espera');</code></pre>
+        1.  <pre><code>USE gemasas;<br>INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor1'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor2'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor3'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor4'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor5'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor6'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor7'); <br> INSERT INTO uploadForm_revisor (`name`, `surname`) VALUES ('name', 'Revisor8'); <br> INSERT INTO uploadForm_estado (name) VALUES ('activo'); <br> INSERT INTO uploadForm_estado (name) VALUES ('inactivo'); <br> INSERT INTO uploadForm_estado (name) VALUES ('espera');</code></pre>
     11.por ultimo se puede ejecutar el proyecto con el siguiente comando desde la carpeta raiz del proyecto:<pre><code>python manage.py runserver</code></pre>
 
 
